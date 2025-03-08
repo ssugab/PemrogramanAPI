@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie List API</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <h1>Daftar Film dari API</h1>
+
+    <div class="search-container">
+        <input 
+            type="text" 
+            id="searchInput" 
+            class="search-input"
+            placeholder="Cari film..."
+        >
+        <button id="searchButton" class="search-button">Search</button>
+        <span id="loading" class="loading">Mencari...</span>
+    </div>
+
+    <div id="movieResults">
+        <!-- Hasil pencarian akan ditampilkan di sini -->
+    </div>
+
+    <div class="navigation">
+        <h1>List Film Populer</h1>
+        <a href="/popular" class="popular-button">Lihat Film Populer</a>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="/js/main.js"></script>
+</body>
+</html> 

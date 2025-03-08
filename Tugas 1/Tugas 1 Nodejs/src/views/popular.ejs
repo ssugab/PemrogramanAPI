@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Film Populer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <div class="popular-list">
+        <h1>List Film Populer 2025</h1>
+        <a href="/" class="back-button">Kembali ke Pencarian</a>
+        
+        <% if (typeof error !== 'undefined') { %>
+            <p class="error"><%= error %></p>
+        <% } else { %>
+            <table>
+                <tr>
+                    <th>No</th>
+                    <th>Judul Film</th>
+                    <th>Tanggal Rilis</th>
+                    <th>Rating</th>
+                    <th>Overview</th>
+                </tr>
+                <% movies.forEach((movie, index) => { %>
+                    <tr>
+                        <td><%= index + 1 %></td>
+                        <td><%= movie.title %></td>
+                        <td><%= movie.release_date %></td>
+                        <td><%= movie.vote_average %></td>
+                        <td><%= movie.overview %></td>
+                    </tr>
+                <% }); %>
+            </table>
+        <% } %>
+    </div>
+</body>
+</html> 

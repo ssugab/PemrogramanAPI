@@ -1,0 +1,184 @@
+body {
+    font-family: 'Lexend', sans-serif;
+    margin: 0;
+    padding: 40px;
+    background-color: #19180A;
+    color: #f2f2f2;
+    line-height: 1.6;
+}
+
+h1 {
+    text-align: center;
+    color: #E71D36;
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Styling untuk tabel */
+table {
+    border-collapse: separate;
+    border-spacing: 0;
+    width: 100%;
+    margin: 30px 0;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+th {
+    background-color: #772014;
+    color: #ffffff;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+tr:hover {
+    background-color: rgba(231, 29, 54, 0.1);
+    transition: all 0.3s ease;
+}
+
+/* Styling untuk search container */
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 0;
+}
+
+.search-input {
+    padding: 15px 20px;
+    width: 400px;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #f2f2f2;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.search-input:focus {
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.15);
+    box-shadow: 0 0 20px rgba(231, 29, 54, 0.2);
+}
+
+.search-input::placeholder {
+    color: rgba(242, 242, 242, 0.6);
+}
+
+/* Styling untuk loading indicator */
+.loading {
+    display: none;
+    margin-left: 15px;
+    color: #E71D36;
+    font-weight: 500;
+}
+
+/* Styling untuk error messages */
+.error {
+    color: #E71D36;
+    padding: 15px;
+    background-color: rgba(231, 29, 54, 0.1);
+    border-radius: 8px;
+    margin: 20px 0;
+    text-align: center;
+    border: 1px solid rgba(231, 29, 54, 0.3);
+}
+
+/* Styling untuk navigation */
+.navigation {
+    margin: 40px 0;
+    text-align: center;
+}
+
+.popular-button, .back-button {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.popular-button {
+    background-color: #772014;
+    color: white;
+    box-shadow: 0 4px 15px rgba(119, 32, 20, 0.3);
+}
+
+.popular-button:hover {
+    background-color: #AF4319;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(175, 67, 25, 0.4);
+}
+
+.back-button {
+    background-color: #E71D36;
+    color: white;
+    box-shadow: 0 4px 15px rgba(231, 29, 54, 0.3);
+}
+
+.back-button:hover {
+    background-color: #ff2e4a;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(231, 29, 54, 0.4);
+}
+
+/* Styling untuk tombol search */
+.search-button {
+    padding: 15px 30px;
+    margin-left: 10px;
+    background-color: #772014;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.search-button:hover {
+    background-color: #AF4319;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(119, 32, 20, 0.3);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    body {
+        padding: 20px;
+    }
+
+    .search-input {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    table {
+        font-size: 14px;
+    }
+
+    th, td {
+        padding: 10px;
+    }
+
+    .popular-button, .back-button {
+        padding: 12px 25px;
+        font-size: 14px;
+    }
+} 
